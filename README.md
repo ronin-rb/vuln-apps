@@ -8,11 +8,12 @@ educational purposes.
 ## Apps
 
 * `lfi/`
-  * `php/` - A PHP app demonstrating various types of Local File Inclusion
-    (LFI).
+  * [php/](lfi/php) - A PHP app demonstrating various types of Local File
+    Inclusion (LFI).
 * `rfi/`
-  * `php/` - A PHP app demonstrating Remote File Inclusion (RFI).
-  * `jsp/` - A JSP/Tomcat app demonstrating Remote File Inclusion (RFI).
+  * [php/](rfi/php) - A PHP app demonstrating Remote File Inclusion (RFI).
+  * [jsp/](rfi/jsp) - A JSP/Tomcat app demonstrating Remote File Inclusion
+    (RFI).
 
 ## Contributing
 
