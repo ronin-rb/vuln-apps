@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  web:
+    image: vuln-apps-rfi-jsp
+    hostname: jsp.rfi.vuln-apps
+    build:
+      context: .
+    mount:
+    ports:
+      - "8080:8000"

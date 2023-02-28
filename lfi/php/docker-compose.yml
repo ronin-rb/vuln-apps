@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  web:
+    image: vuln-apps-lfi
+    hostname: lfi.vuln-apps
+    build:
+      context: .
+    mount:
+    ports:
+      - "8080:80"
