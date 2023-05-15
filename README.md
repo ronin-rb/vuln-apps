@@ -7,6 +7,9 @@ educational purposes.
 
 ## Apps
 
+* `cmdi/`
+  * [php/](cmdi/php) - A PHP app demonstrating various types of Command
+    Injection.
 * `lfi/`
   * [php/](lfi/php) - A PHP app demonstrating various types of Local File
     Inclusion (LFI).
