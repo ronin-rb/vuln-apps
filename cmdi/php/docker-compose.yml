@@ -6,6 +6,5 @@ services:
     hostname: cmdi.vuln-apps
     build:
       context: .
-    mount:
     ports:
       - "8080:80"
