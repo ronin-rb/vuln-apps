@@ -4,3 +4,4 @@
 *.log
 *.swp
 *~
+/stack_overflow/c/greeter

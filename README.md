@@ -20,6 +20,9 @@ educational purposes.
 * `open_redirect/`
   * [php/](open_redirect/php) - A PHP app demonstrating Open Redirect
     vulnerabilities.
+* `stack_overflow/`
+  * [c/](stack_overflow/c) - A simple C greeter network server containing a
+    Stack Overflow vulnerability.
 
 ## Contributing
 
