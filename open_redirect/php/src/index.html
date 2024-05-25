@@ -9,9 +9,13 @@
     <p>A list of PHP Open Redirect vulnerabilities:</p>
 
     <ul>
-      <li><a href="/http_redirect.php?url=page.html">HTTP redirect</a></li>
-      <li><a href="/domain_redirect.php?domain=localhost">subdomain redirect</a></li>
-      <li><a href="/meta_redirect.php?url=page.html">meta redirect</a></li>
+      <li><a href="/open_redirect_via_http_redirect.php?page=page.html">Open Redirect via HTTP redirect</a></li>
+      <li><a href="/open_redirect_via_http_redirect_with_suffix.php?page=page">Open Redirect via HTTP redirect but with appended suffix</a></li>
+      <li><a href="/open_redirect_via_http_redirect_in_subdomain.php?domain=foo">Open Redirect via HTTP redirect in the subdomain</a></li>
+
+      <li><a href="/open_redirect_via_meta_redirect.php?page=page.html">Open Redirect via meta redirect</a></li>
+      <li><a href="/open_redirect_via_meta_redirect_with_suffix.php?page=page">Open Redirect iva meta redirect with suffix</a></li>
+      <li><a href="/open_redirect_via_meta_redirect_in_subdomain.php?domain=foo">Open Redirect iva meta redirect in subdomain</a></li>
     </ul>
   </body>
 </html>
