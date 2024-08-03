@@ -54,7 +54,7 @@ else
 
 <html>
   <head>
-    <title></title>
+    <title>Vuln Apps / SQL injection (SQLi) / SQLi in UPDATE</title>
   </head>
   <body>
     <h1>Update a ToDo List entry</h1>
