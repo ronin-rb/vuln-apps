@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  web:
+    image: vuln-apps-sqli
+    hostname: sqli.vuln-apps
+    build:
+      context: .
+    ports:
+      - "8080:80"

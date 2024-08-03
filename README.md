@@ -17,6 +17,9 @@ educational purposes.
   * [php/](rfi/php) - A PHP app demonstrating Remote File Inclusion (RFI).
   * [jsp/](rfi/jsp) - A JSP/Tomcat app demonstrating Remote File Inclusion
     (RFI).
+* `sqli/`
+  * [php/](sqli/php) - A PHP app demonstrating various types of SQL injections
+    (SQLi).
 * `open_redirect/`
   * [php/](open_redirect/php) - A PHP app demonstrating Open Redirect
     vulnerabilities.
