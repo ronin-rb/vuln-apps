@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
   }
 
   $db = new SQLite3('database.db');
-  $query = "SELECT id, title, category FROM todo_items WHERE id = :id LIMIT 1";
+  $query = "SELECT id, name, category FROM todo_items WHERE id = :id LIMIT 1";
   $stmt  = $db->prepare($query);
   $stmt->bindValue(':id', $_GET['id'], SQLITE3_INTEGER);
   $result = $stmt->execute();
@@ -25,22 +25,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
 }
 else if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-  if (!isset($_POST['id']) || !isset($_POST['title']) || !isset($_POST['category']))
+  if (!isset($_POST['id']) || !isset($_POST['name']) || !isset($_POST['category']))
   {
     http_response_code(400);
-    echo "Please provide 'id', 'title', and 'category' form params.";
+    echo "Please provide 'id', 'name', and 'category' form params.";
     exit;
   }
 
   $row = array(
     "id"=>$_POST['id'],
-    "title"=>$_POST['title'],
+    "name"=>$_POST['name'],
     "category"=>$_POST['category']
   );
 
   $db = new SQLite3('database.db');
 
-  $query = "UPDATE todo_items SET title='" . $row['title'] . "', category='" . $row['category'] . "', created_at=DATETIME() WHERE id = " . $row['id'];
+  $query = "UPDATE todo_items SET name='" . $row['name'] . "', category='" . $row['category'] . "', created_at=DATETIME() WHERE id = " . $row['id'];
 
   $updated = $db->exec($query);
 }
@@ -63,8 +63,8 @@ else
       <input type="hidden" name="id" value="<?php echo htmlspecialchars($row['id']); ?>"/>
 
       <p>
-        <label for="title">Title:</label>
-        <input type="text" name="title" value="<?php echo htmlspecialchars($row['title']); ?>" placeholder="Item name here..."/>
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<?php echo htmlspecialchars($row['name']); ?>" placeholder="Item name here..."/>
       </p>
 
       <p>

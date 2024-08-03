@@ -19,7 +19,7 @@ $result = $db->query($query);
     <h1>ToDo List Items</h1>
     <table>
       <tr>
-        <th>title</th>
+        <th>name</th>
         <th>category</th>
         <th>created_at</th>
       </tr>
@@ -27,7 +27,7 @@ $result = $db->query($query);
   while ($row = $result->fetchArray(SQLITE3_ASSOC))
   {
     echo "  <tr>";
-    echo "    <td>" . htmlspecialchars($row['title']) . "</td>";
+    echo "    <td>" . htmlspecialchars($row['name']) . "</td>";
     echo "    <td>" . htmlspecialchars($row['category']) . "</td>";
     echo "    <td>" . htmlspecialchars($row['created_at']) . "</td>";
     echo "  </tr>";

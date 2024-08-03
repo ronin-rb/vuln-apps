@@ -3,14 +3,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
   $db = new SQLite3('database.db');
 
-  if (!isset($_POST['title']) || !isset($_POST['category']))
+  if (!isset($_POST['name']) || !isset($_POST['category']))
   {
     http_response_code(400);
-    echo "Please provide 'title' and 'category' form params.";
+    echo "Please provide 'name' and 'category' form params.";
     exit;
   }
 
-  $query = "INSERT INTO todo_items (title, category, created_at) VALUES ('" . $_POST['title'] . "', '" . $_POST['category'] . "', DATETIME())";
+  $query = "INSERT INTO todo_items (name, category, created_at) VALUES ('" . $_POST['name'] . "', '" . $_POST['category'] . "', DATETIME())";
 
   $added = $db->exec($query);
 }
@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     <form method="POST">
       <p>
-        <label for="title">Title:</label>
-        <input type="text" name="title" placeholder="Item name here..."/>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Item name here..."/>
       </p>
 
       <p>
