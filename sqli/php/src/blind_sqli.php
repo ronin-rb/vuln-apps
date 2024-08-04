@@ -18,7 +18,7 @@ $t2 = microtime(true);
 
 <html>
   <head>
-    <title>Vuln Apps / SQL injection (LFI) / PHP / Basic SQLi</title>
+    <title>Vuln Apps / SQL injection (SQLi) / PHP / Basic SQLi</title>
   </head>
   <body>
     <h1>Blind SQL injection</h1>

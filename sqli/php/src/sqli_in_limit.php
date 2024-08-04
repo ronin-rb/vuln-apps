@@ -13,7 +13,7 @@ $result = $db->query($query);
 ?>
 <html>
   <head>
-    <title>Vuln Apps / SQL injection (LFI) / PHP / SQLi in LIMIT</title>
+    <title>Vuln Apps / SQL injection (SQLi) / PHP / SQLi in LIMIT</title>
   </head>
   <body>
     <h1>ToDo List Items</h1>
